@@ -6,6 +6,19 @@ Honestly, if you're looking at this, the correct solution is likely to deploy a 
 
 ## Installation
 
+Copy the plugin to your `dnf-plugins` module directory:
+
+```sh
+cp netrc_plugin.py "$(rpm -E '%python3_sitelib')/dnf-plugins/."
+```
+
+Alternatively, build the RPM and install that, which is basically the same thing but with actual book-keeping that you've done something to your system.
+
+In either case, you will need to reinstall the plugin any time that your platform's version of Python updates.
+This is a non-issue on Red Hat, and probably other "enterprise" Linux offerings, but happens with irregular periodicity on Fedora.
+
+```sh
+
 
 ## Esoterica
 
