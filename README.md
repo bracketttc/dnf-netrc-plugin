@@ -17,9 +17,6 @@ Alternatively, build the RPM and install that, which is basically the same thing
 In either case, you will need to reinstall the plugin any time that your platform's version of Python updates.
 This is a non-issue on Red Hat, and probably other "enterprise" Linux offerings, but happens with irregular periodicity on Fedora.
 
-```sh
-
-
 ## Esoterica
 
 Python's [`netrc`](https://docs.python.org/3/library/netrc.html) module and `curl` treat repeated machine entries in the `.netrc` file differently.
